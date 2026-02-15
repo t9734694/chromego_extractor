@@ -30,6 +30,48 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
+- name: 🇩🇪 DE-Hysteria | 0-0
+  type: hysteria
+  server: 5.83.129.153
+  port: 20088
+  ports: 20088
+  auth-str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: 🇨🇦 CA-Hysteria | 1-0
+  type: hysteria
+  server: 98.142.247.21
+  port: 39228
+  ports: 39228
+  auth-str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: 🇩🇪 DE-Hysteria | 2-0
+  type: hysteria
+  server: 5.83.129.90
+  port: 54177
+  ports: 54177
+  auth-str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 - name: 🇺🇸 US-Hysteria2 | 0-0
   type: hysteria2
   server: 157.254.223.43
@@ -65,6 +107,9 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇩🇪 DE-Hysteria | 0-0
+  - 🇨🇦 CA-Hysteria | 1-0
+  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
@@ -75,6 +120,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
+  - 🇩🇪 DE-Hysteria | 0-0
+  - 🇨🇦 CA-Hysteria | 1-0
+  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
@@ -85,6 +133,9 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
+  - 🇩🇪 DE-Hysteria | 0-0
+  - 🇨🇦 CA-Hysteria | 1-0
+  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
@@ -95,6 +146,9 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇩🇪 DE-Hysteria | 0-0
+  - 🇨🇦 CA-Hysteria | 1-0
+  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
@@ -105,6 +159,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇩🇪 DE-Hysteria | 0-0
+  - 🇨🇦 CA-Hysteria | 1-0
+  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
@@ -115,6 +172,9 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇩🇪 DE-Hysteria | 0-0
+  - 🇨🇦 CA-Hysteria | 1-0
+  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
@@ -125,6 +185,9 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇩🇪 DE-Hysteria | 0-0
+  - 🇨🇦 CA-Hysteria | 1-0
+  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
@@ -135,6 +198,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇩🇪 DE-Hysteria | 0-0
+  - 🇨🇦 CA-Hysteria | 1-0
+  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
@@ -145,6 +211,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇩🇪 DE-Hysteria | 0-0
+  - 🇨🇦 CA-Hysteria | 1-0
+  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
@@ -155,6 +224,9 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇩🇪 DE-Hysteria | 0-0
+  - 🇨🇦 CA-Hysteria | 1-0
+  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
@@ -165,6 +237,9 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
+  - 🇩🇪 DE-Hysteria | 0-0
+  - 🇨🇦 CA-Hysteria | 1-0
+  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
@@ -175,6 +250,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇩🇪 DE-Hysteria | 0-0
+  - 🇨🇦 CA-Hysteria | 1-0
+  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
@@ -185,6 +263,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇩🇪 DE-Hysteria | 0-0
+  - 🇨🇦 CA-Hysteria | 1-0
+  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
@@ -195,6 +276,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇩🇪 DE-Hysteria | 0-0
+  - 🇨🇦 CA-Hysteria | 1-0
+  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
@@ -214,6 +298,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
+  - 🇩🇪 DE-Hysteria | 0-0
+  - 🇨🇦 CA-Hysteria | 1-0
+  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
   - 🇺🇸 US-Hysteria2 | 1-0
   - 🇫🇷 FR-Hysteria2 | 2-0
