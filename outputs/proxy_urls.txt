@@ -1,0 +1,3 @@
+hysteria://5.83.129.153:20088/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇩🇪 DE-Hysteria | 0-0
+hysteria://5.83.129.90:54177/?protocol=udp&insecure=1&peer=apple.com&auth=dongtaiwang.com&upmbps=80&downmbps=100&alpn=h3&obfs=#🇩🇪 DE-Hysteria | 2-0
+hysteria2://dongtaiwang.com@157.254.223.43:27921/?sni=www.bing.com&insecure=1#🇺🇸 US-Hysteria2 | 0-0
