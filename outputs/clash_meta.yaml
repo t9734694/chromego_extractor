@@ -25,20 +25,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇩🇪 DE-Hysteria | 2-0
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  ports: 54177
-  auth-str: dongtaiwang.com
-  up: 80
-  down: 100
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: 🇺🇸 US-Hysteria2 | 0-0
   type: hysteria2
   server: 157.254.223.43
@@ -53,7 +39,6 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇩🇪 DE-Hysteria | 0-0
-  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
 - name: ♻️ 自动选择
   type: url-test
@@ -62,7 +47,6 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🇩🇪 DE-Hysteria | 0-0
-  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
 - name: 📺 巴哈姆特
   type: select
@@ -70,7 +54,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇩🇪 DE-Hysteria | 0-0
-  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
 - name: 📺 哔哩哔哩
   type: select
@@ -78,7 +61,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇩🇪 DE-Hysteria | 0-0
-  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
 - name: 🌏 国内媒体
   type: select
@@ -86,7 +68,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇩🇪 DE-Hysteria | 0-0
-  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
 - name: 🌍 国外媒体
   type: select
@@ -94,7 +75,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇩🇪 DE-Hysteria | 0-0
-  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
 - name: 📲 电报信息
   type: select
@@ -102,7 +82,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇩🇪 DE-Hysteria | 0-0
-  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
 - name: Ⓜ️ 微软云盘
   type: select
@@ -110,7 +89,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇩🇪 DE-Hysteria | 0-0
-  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
 - name: Ⓜ️ 微软服务
   type: select
@@ -118,7 +96,6 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇩🇪 DE-Hysteria | 0-0
-  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
 - name: 🍎 苹果服务
   type: select
@@ -126,7 +103,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇩🇪 DE-Hysteria | 0-0
-  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
 - name: 📢 谷歌FCM
   type: select
@@ -134,7 +110,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇩🇪 DE-Hysteria | 0-0
-  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
 - name: 🤖 OpenAI
   type: select
@@ -142,7 +117,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇩🇪 DE-Hysteria | 0-0
-  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
 - name: 🎯 全球直连
   type: select
@@ -159,7 +133,6 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇩🇪 DE-Hysteria | 0-0
-  - 🇩🇪 DE-Hysteria | 2-0
   - 🇺🇸 US-Hysteria2 | 0-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
